@@ -1,0 +1,103 @@
+<!--Crear una página que permita la carga de los datos personales de un alumno (nombre,
+apellido, dni, domicilio, etc), las materias que a cursado en el ultimo año (de un total de
+10 materias) y las notas obtenidas para cada una de ellas. Dicha página debería contener
+un diseño atractivo (imágenes, colores, botones, etc) según su criterio. Una vez
+cargados los datos, se deberían realizar los controles lógicos mínimos, por ejemplo que
+los datos personales estén completos, que el alumno al menos cursó 5 materias en el
+año, que la fecha de nacimiento sea una fecha lógica y que el promedio de las notas de
+cada materia sea superior a 7. Dichos controles se deben realizar con funciones
+JavaScript, las cuales se encuentran en un archivo externo, por ejemplo,
+misFunciones.js. Utilice arreglos, tablas, botones, imágenes y todos los elementos visto
+hasta ahora para cumplir con el objetivo.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="misfunciones.js" lenguaje="javascript" type="text/javascript"></script>
+</head>
+<body>
+    <table id="datos" BORDER="1">
+        <tr>
+            <th colspan="2">Datos Personales</th>
+        </tr>
+        <tr >
+            <td>Nombre:</td>
+            <td><input type="text"  class="inp"id="name"></td>
+        </tr>
+        <tr >
+            <td>Apellido:</td>
+            <td ><input type="text" class="inp" id="apellido"></td>
+        </tr>
+        <tr>
+            <td>Edad:</td>
+            <td ><input type="text" class="inp"id="edad"></td>
+        </tr>
+        <tr>
+            <td>DNI:</td>
+            <td ><input type="text" class="inp"id="DNI"></td>
+        </tr>
+        <tr>
+            <td>Fecha de nacimiento:(cargar de la siguiente manera)
+                Dia/Mes/Año
+            </td>
+            <td ><input type="text" class="inp2"id="dia">
+            <input type="text" class="inp2"id="mes">
+            <input type="text" class="inp2"id="año"></td>
+        </tr>
+        <tr>
+            <td>Sexo:</td>
+            <td >
+                <input type="radio" name="sexo" value="Masculino">Masculino
+                <input type="radio" name="sexo" value="Femenino">Femenino
+            </td>
+        </tr>
+        <tr >
+            <td>Domicilio:
+                Calle:<input type="text" class="inp" id="domicilioC"></td>
+            <td >Numero altura de casa:<input type="text" class="inp" id="domicilioNC"></td>
+        </tr>
+        <tr>
+            <td>
+                Provincia
+            </td>
+            <td>
+                <select name="provincia" id="provincia">
+                    <option value="">Seleccionar provincia</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Bs. Aires">Bs. Aires</option>
+                    <option value="San Luis">San Luis</option>
+                    <option value="San Juan">San Juan </option>
+                    <option value="Tierra Del Fuego">Tierra Del Fuego</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <div class="conteiner">
+        <div class="item">
+            <input type="button" class="button" value="Agregar materia" onclick="agregarMateria()">
+        </div>
+        <div class="item">
+            <input type="button" class="button" value="Confirmar" onclick="confirmarDatos()">
+        </div>
+    </div>
+    <br>
+    <div class="conteiner">
+        <div class="item">
+            
+            <textarea class="resultado" id="resultado"></textarea>
+        </div>
+        <div class="item">
+            <img src="./assets/arbol.jpg" class="img" alt="árbol" id="img">
+            <p id="pieDeFoto"></p>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
