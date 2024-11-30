@@ -1,7 +1,7 @@
 Hola en este repotorio encontraras una pagina que verifica una serie de datos personales.
 
-Cree una página que permite la carga de los datos personales de un alumno (nombre, apellido, dni, domicilio, etc),las materias que a cursado en el ultimo año 
-(de un total de 10 materias) y las notas obtenidas para cada una de ellas. 
+Cree una página que permite la carga de los datos personales de un alumno (nombre, apellido, dni, domicilio, etc), las materias que a curso en el ultimo año 
+(10 materias) y las notas obtenidas para cada una de ellas. 
 
 Dicha página debería contiene un diseño atractivo (imágenes, colores, botones, etc).
 
